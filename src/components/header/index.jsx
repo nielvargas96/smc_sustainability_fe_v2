@@ -1,7 +1,8 @@
 'use client'
+
 import './style.scss'
 import { useEffect, useState, useRef } from 'react';
-import Nav from './sideNav';
+import Nav from './sideNAv';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
