@@ -1,0 +1,35 @@
+.section-3 {
+  background-color: #F0F1EF;
+  height: 100vh;
+
+  .description-container {
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+  }
+}
+
+.tab-section {
+  color: #55B047;
+  font-size: 36px;
+  font-weight: 700;
+  padding-top: 10vh;
+
+  h3 {}
+
+  .sub-title {
+    color: #55B047;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+  }
+
+  p {
+    color: #30302C;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+  }
+
+}

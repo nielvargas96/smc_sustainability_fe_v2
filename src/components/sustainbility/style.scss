@@ -1,0 +1,96 @@
+.section-4 {
+  height: 100vh;
+  padding: 5rem 2rem;
+
+  .description {
+    text-align: center;
+
+    .heading-1 {
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      color: #505052;
+      line-height: 1.5;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15vh auto;
+  position: relative;
+  height: 340px;
+  width: 380px;
+}
+
+.wrap-item {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  .desc {
+    position: absolute;
+    width: 100%;
+  }
+
+  .label {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 38px;
+  }
+
+  .sub-label {
+    font-style: italic;
+    color: #505052;
+    font-size: 24px;
+  }
+}
+
+.kalikasan {
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+
+  .label {
+    color: #55B047;
+  }
+
+  .desc {
+    left: -150%;
+  }
+}
+
+.kalinga {
+  top: 0;
+  z-index: 2;
+
+  .label {
+    color: #F58231;
+  }
+
+  .desc {
+    top: 10%;
+    right: -140%;
+  }
+}
+
+.kasaganahan {
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+
+  .label {
+    color: #00A3D5;
+  }
+
+  .desc {
+    top: 50%;
+    right: -140%;
+  }
+}

@@ -1,0 +1,43 @@
+.section-2 {
+  height: 110vh;
+  background-color: #F5F5F7;
+
+  h2 {
+    color: #2E2E2F;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .block-content {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .name {
+    color: #505052;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .role {
+    color: #505052;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+
+  .img-container {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .description-container {
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+  }
+}

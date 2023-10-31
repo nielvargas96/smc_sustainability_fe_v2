@@ -1,0 +1,19 @@
+.btn {
+  display: inline-flex;
+  padding: 14px 53px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  span {
+    color: #FFF;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  &.btn-pri {
+    border-radius: 100px;
+    background: #E8412C
+  }
+}
