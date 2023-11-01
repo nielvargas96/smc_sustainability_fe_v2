@@ -89,10 +89,14 @@
 .menu-item {
     position: relative;
 
+    svg {
+        transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
     &:hover {
         .sub-menu {
             display: block;
-            background: #2e2e2f;
+            background: rgb(86, 161, 71);
             width: 20vw;
             border-radius: 8px;
 
@@ -101,6 +105,12 @@
                 color: #fff;
                 font-size: 14px;
             }
+
+
+        }
+
+        svg {
+            transform: rotate(-180deg);
         }
     }
 
@@ -116,11 +126,16 @@
         align-items: center;
         font-size: 1rem;
         padding-bottom: 1rem;
+        font-weight: 500;
 
         span {
             margin-right: 8px;
         }
     }
+}
+
+.sub-menu-item {
+    margin-bottom: 6px;
 }
 
 .menuWrapper {

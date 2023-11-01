@@ -1,5 +1,4 @@
 
-
 export const variants = {
   initial: { scale: 0 },
   open: {

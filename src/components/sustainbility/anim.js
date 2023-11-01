@@ -8,12 +8,14 @@ export const variants = {
       duration: 2,
       ease: "easeInOut",
     },
+    repeat: Infinity,
+    repeatType: "loop",
     delay: 1
   },
   closed: {
     pathLength: 0,
     transition: {
-      duration: 2,
+      duration: 0,
       ease: "easeInOut",
     }
   }

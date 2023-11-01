@@ -13,7 +13,7 @@ export default function Index({ children }) {
   // const isInView = useInView(description, { once: true, amount: 0.8 });
 
   return (
-    <div ref={description} className='description'>
+    <div ref={description} className='text-description'>
       <div className='body'>
         <div className='text'>
           {
