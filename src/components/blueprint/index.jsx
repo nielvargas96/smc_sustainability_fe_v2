@@ -2,24 +2,26 @@ import './style.scss'
 import Image from 'next/image'
 import Magnetic from '@/components/common/Magnetic'
 import Link from 'next/link'
+import Description from '@/components/common/Description'
 
 export default function Blueprint() {
   return (
     <section className='section-3'>
       <div className='block-content '>
         <div className='tab-section'>
-          <h3 className='heading-1'>A Blueprint for
+          <h2 className='heading-1'>A Blueprint for
             San Miguel
-          </h3>
+          </h2>
 
           <div className='two-col'>
             <div className='description-container'>
-
               <div className='description'>
-                <p className='sub-title'>Sustainable Agenda </p>
-                <p>
-                  We envision a world of good, where our business fosters a sustainable future that is good for the planet, good for people, and good for progress, benefiting present and future generations of Filipinos.
-                </p>
+                <h3 className='sub-title'> Sustainable Agenda </h3>
+                <div className='p-text'>
+                  <Description>
+                    We envision a world of good, where our business fosters a sustainable future that is good for the planet, good for people, and good for progress, benefiting present and future generations of Filipinos.
+                  </Description>
+                </div>
                 <div className='blueprint-list'>
 
                   <div className='blueprint-item'>
@@ -60,7 +62,7 @@ export default function Blueprint() {
 
                     <div className='info'>
                       <span className='label'><b className='green'>Kalikasan</b> <i>Good for Planet</i></span>
-                      <div className='text'>
+                      <div className='p-text'>
                         <p>1. Establish a circular economy approach by 2040</p>
                         <p>2. Net Zero by 2050</p>
                       </div>

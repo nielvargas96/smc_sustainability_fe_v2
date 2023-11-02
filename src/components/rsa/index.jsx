@@ -20,6 +20,8 @@ export default function Rsa() {
   const x = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
   const matches = useMediaQuery('(min-width: 768px)');
+
+
   return (
     <>
       <section className='section-2'>
