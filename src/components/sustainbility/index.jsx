@@ -18,8 +18,7 @@ export default function Sustainability() {
       <div className='block-content'>
         <div className='description-container'>
           <div className='description'>
-            <h4 className='heading-1'>Our Sustainability
-              Agenda and Targets</h4>
+            <h4 className='heading-1'>Our Sustainability Agenda and Targets</h4>
             <p>We envision a world of good, where our business fosters a sustainable future that is good for the planet, good for people, and good for progress, benefiting present and future generations of Filipinos.</p>
           </div>
         </div>
@@ -45,17 +44,8 @@ export default function Sustainability() {
                 variants={variants}
                 initial="initial"
                 animate={isInView ? "open" : "closed"}
-                whileHover={{
-                  pathLength: 0,
-                }}
-                whileFocus={{
-                  pathLength: 1,
-                  repeat: Infinity,
-                  repeatType: "loop",
-                }}
 
-
-                d="M68.4222 114.688C68.4222 114.688 61.01 111.52 60.1864 103.284C59.9963 101.384 59.5529 96.9489 61.4534 90.6137C63.354 84.2784 69.0557 78.5767 65.2546 76.6762C61.4534 74.7756 56.3853 83.6449 56.3853 83.6449C56.3853 83.6449 47.5159 100.117 50.6836 113.42C53.8512 126.724 68.4222 136.227 68.4222 136.227V146.997" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />aa
+                d="M68.4222 114.688C68.4222 114.688 61.01 111.52 60.1864 103.284C59.9963 101.384 59.5529 96.9489 61.4534 90.6137C63.354 84.2784 69.0557 78.5767 65.2546 76.6762C61.4534 74.7756 56.3853 83.6449 56.3853 83.6449C56.3853 83.6449 47.5159 100.117 50.6836 113.42C53.8512 126.724 68.4222 136.227 68.4222 136.227V146.997" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
               <motion.path
                 variants={variants}
                 initial="initial"

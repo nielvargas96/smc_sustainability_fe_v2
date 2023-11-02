@@ -51,6 +51,62 @@ html.lenis {
   pointer-events: none;
 }
 
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 11px;
+  height: 100%;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+
+.c-scrollbar:hover {
+  transform: scaleX(1.45);
+}
+
+.c-scrollbar:hover,
+.has-scroll-scrolling .c-scrollbar,
+.has-scroll-dragging .c-scrollbar {
+  opacity: 1;
+}
+
+[data-scroll-direction="horizontal"] .c-scrollbar {
+  width: 100%;
+  height: 10px;
+  top: auto;
+  bottom: 0;
+  transform: scaleY(1);
+}
+
+[data-scroll-direction="horizontal"] .c-scrollbar:hover {
+  transform: scaleY(1.3);
+}
+
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 7px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.has-scroll-dragging .c-scrollbar_thumb {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+[data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+  right: auto;
+  bottom: 0;
+}
+
 body {
   max-width: 100vw;
   overflow-x: hidden;
@@ -90,23 +146,27 @@ a {
 p {
   font-size: 1.3rem;
   font-family: 'Merriweather', serif;
+  color: #30302C;
+  line-height: 1.5;
 }
 
 h1,
 .heading-1 {
   font-size: 2.5rem;
-  font-weight: 700;
-  color: #2E2E2F;
-  font-family: 'Montserrat', sans-serif;
 }
 
 img {
   display: block;
 }
 
-h2 {}
+h2,
+.heading-2 {
+  font-size: 2.25rem;
+}
 
-h3 {}
+h3.heading-3 {
+  font-size: 2rem;
+}
 
 h4 {}
 
@@ -118,7 +178,7 @@ h5 {}
 .heading-4,
 .heading-5 {
   font-weight: 700;
-  color: #30302C;
+  color: #2E2E2F;
 }
 
 .action-button {}

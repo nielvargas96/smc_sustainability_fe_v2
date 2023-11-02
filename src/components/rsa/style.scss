@@ -94,7 +94,6 @@
       margin: 0 auto;
       flex-direction: row;
       max-width: 1200px;
-      height: 100vh;
     }
 
     .description {
@@ -111,6 +110,10 @@
         right: -12vw;
         bottom: 0;
       }
+    }
+
+    .heading-1 {
+      max-width: 50%;
     }
 
     .message {

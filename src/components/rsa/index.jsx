@@ -6,6 +6,7 @@ import Description from '@/components/common/Description'
 import { motion, useScroll, useTransform } from "framer-motion"
 import { useRef } from 'react';
 import Magnetic from '@/components/common/Magnetic'
+import { useMediaQuery } from 'usehooks-ts'
 
 import './style.scss'
 
@@ -17,6 +18,8 @@ export default function Rsa() {
     offset: ['start end', 'end start']
   })
   const x = useTransform(scrollYProgress, [0, 1], [0, 100]);
+
+  const matches = useMediaQuery('(min-width: 768px)');
   return (
     <>
       <section className='section-2'>
@@ -28,8 +31,7 @@ export default function Rsa() {
           <div className='card-wrapper'>
             <div className='description'>
               <motion.h2 className='heading-1'>
-                <Description>Message from our </Description>
-                <Description>president and CEO</Description>
+                <Description>Message from our president and CEO</Description>
               </motion.h2>
 
               <div className='message'>

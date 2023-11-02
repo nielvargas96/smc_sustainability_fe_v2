@@ -11,6 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f5f5f5" />
       <SmoothScrollProvider>
         <body>
           <div className='app'>

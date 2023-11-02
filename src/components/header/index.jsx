@@ -93,7 +93,7 @@ export default function Index() {
                     <>
                       <span>{e.title}</span>
                       <svg width="20" height="20" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24.375 11.25L15 20.625L5.625 11.25" stroke="#30302C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M24.375 11.25L15 20.625L5.625 11.25" stroke="#30302C" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
                     </>
                   )}
