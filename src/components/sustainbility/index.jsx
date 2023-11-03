@@ -7,9 +7,7 @@ import SustainabilityItem from './item'
 import Image from 'next/image'
 
 
-
 export default function Sustainability() {
-
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -20,22 +18,38 @@ export default function Sustainability() {
   })
 
   const y = useTransform(scrollYProgress, [0, 1], [-100, 330]);
+  const x = useTransform(scrollYProgress, [0, 1], [0, 150]);
+
+  const slideUpVariants = {
+    initial: { opacity: 0, y: 50 },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 2.2,
+        duration: 1.25
+      }
+    },
+    exit: { opacity: 0, y: 50 },
+  }
 
   return (
     <section className='section-4' ref={refContainer}>
       <div className='block-content'>
 
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { delay: 2, duration: .5, staggerChildren: 0.5 } }}
+          variants={slideUpVariants}
+          initial="initial"
+          animate={isInView ? "animate" : "exit"}
           className='background-scroll' >
+
           <motion.div className='top' style={{ y }}>
-            <Image src="/images/sustainability_image_1.png" width={389} height={315} alt='Sustainability Background' />
+            <Image src="/images/sustainability_image_1.png" width={291} height={315} alt='Sustainability Background' />
             <Image src="/images/sustainability_image_2.png" width={389} height={286} alt='Sustainability Background' />
           </motion.div>
-          <motion.div className='bottom' style={{ y }}>
-            <Image src="/images/sustainability_image_3.png" width={389} height={243} alt='Sustainability Background' />
-            <Image src="/images/sustainability_image_4.png" width={389} height={243} alt='Sustainability Background' />
+          <motion.div className='bottom' style={{ x }}>
+            <Image src="/images/sustainability_image_3.png" width={291} height={243} alt='Sustainability Background' />
+            <Image src="/images/sustainability_image_4.png" width={315} height={243} alt='Sustainability Background' />
           </motion.div>
         </motion.div>
 

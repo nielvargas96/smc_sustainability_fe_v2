@@ -79,13 +79,14 @@
     }
 }
 
-.active {
-    padding-left: 1rem;
-    min-width: 350px;
-}
 
 .side-menu-wrapper {
     margin-bottom: 2rem;
+
+    .active {
+        padding-left: 1rem;
+        min-width: 350px;
+    }
 
     span {
         font-size: 2rem;

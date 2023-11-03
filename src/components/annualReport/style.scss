@@ -1,0 +1,25 @@
+.section-7 {
+  .title {
+    h2 {
+
+      span {
+        font-weight: 700;
+        font-size: 3.25rem;
+
+        &:first-child {
+          font-size: 4.25rem;
+        }
+
+        &:nth-child(2) {
+          font-weight: 300;
+        }
+
+        &:last-child {
+          color: #55B047;
+        }
+      }
+    }
+  }
+
+
+}

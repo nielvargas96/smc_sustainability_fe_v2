@@ -16,10 +16,10 @@ export default function SustainabilityItem({ isInView }) {
 
   const handleItemClick = (itemName) => {
     setIsActive((prevActive) => ({
-      ...prevActive,
-      [itemName]: !prevActive[itemName],
+      Kalinga: itemName === 'Kalinga' ? !prevActive.Kalinga : false,
+      Kalikasan: itemName === 'Kalikasan' ? !prevActive.Kalikasan : false,
+      Kasaganahan: itemName === 'Kasaganahan' ? !prevActive.Kasaganahan : false,
     }));
-
   }
 
   return (<>
@@ -27,7 +27,7 @@ export default function SustainabilityItem({ isInView }) {
 
 
     {/* kalinga */}
-    <div className='wrap-item kalinga' >
+    <div className={`wrap-item kalinga ${isActive.Kalinga ? 'zIndex5' : ''} `}  >
       {/* ORANGE */}
 
       <motion.svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -135,7 +135,7 @@ export default function SustainabilityItem({ isInView }) {
     </div>
 
     {/* kalikasan */}
-    <div className='wrap-item kalikasan'>
+    <div className={`wrap-item kalikasan  ${isActive.Kalikasan ? 'zIndex5' : ''}`}>
       {/* GREEN */}
       <motion.svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
 
@@ -244,7 +244,7 @@ export default function SustainabilityItem({ isInView }) {
     </div>
 
     {/* kasaganahan */}
-    <div className='wrap-item kasaganahan'>
+    <div className={`wrap-item kasaganahan  ${isActive.Kasaganahan ? 'zIndex5' : ''}`}>
       {/* BLUE */}
       <motion.svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path

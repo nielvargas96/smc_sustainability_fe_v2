@@ -120,3 +120,10 @@ export const navItems = [
 ];
 
 
+export const modalSustainabilityTargets = [
+  {
+    id: 1,
+    // title: title,
+    // description: description
+  }
+]
