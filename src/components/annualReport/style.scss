@@ -1,10 +1,22 @@
 .section-7 {
-  .title {
-    h2 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: #F5F5F7;
 
+  .block-content {
+    position: relative;
+  }
+
+  .title {
+    line-height: 1;
+    margin-bottom: 2rem;
+
+    h2 {
       span {
+        display: block;
         font-weight: 700;
         font-size: 3.25rem;
+        text-transform: uppercase;
 
         &:first-child {
           font-size: 4.25rem;
@@ -21,5 +33,55 @@
     }
   }
 
+  .card {
+    display: flex;
+  }
 
+  .description-container {
+    width: 50%;
+    padding-right: 2.5rem;
+
+    p {
+      color: #505052;
+    }
+  }
+
+  .img-container {
+    position: relative;
+    width: 50%;
+
+    img {
+      &:first-child {
+        position: relative;
+        z-index: 3;
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        bottom: -5%;
+        left: 50%;
+        z-index: 1;
+      }
+    }
+
+    svg {
+      position: absolute;
+      z-index: 3;
+      bottom: -5%;
+      right: 2rem;
+      ;
+    }
+  }
+
+}
+
+.action-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  margin-left: -5rem;
+  width: 100%;
+  z-index: 3;
 }

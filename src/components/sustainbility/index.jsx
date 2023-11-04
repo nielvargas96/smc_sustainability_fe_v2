@@ -26,7 +26,7 @@ export default function Sustainability() {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 2.2,
+        delay: 1.75,
         duration: 1.25
       }
     },

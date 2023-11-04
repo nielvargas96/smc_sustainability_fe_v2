@@ -21,8 +21,6 @@ export default function RootLayout({ children }) {
               <Suspense fallback={<Loading />}>
                 {children}
               </Suspense>
-
-              <div style={{ height: "100vh" }}></div>
             </main>
 
             <Footer />

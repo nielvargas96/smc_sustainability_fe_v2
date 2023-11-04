@@ -5,6 +5,7 @@ import Rsa from '@/components/rsa'
 import Sustainability from '@/components/sustainbility'
 import Targets from '@/components/targets'
 import Glance from '@/components/glance'
+import AnnualReport from '@/components/annualReport'
 
 export const metadata = {
   title: 'SMC Sustainability',
@@ -20,6 +21,7 @@ export default function Home() {
       <Sustainability />
       <Targets />
       <Glance />
+      <AnnualReport />
     </>
   )
 }

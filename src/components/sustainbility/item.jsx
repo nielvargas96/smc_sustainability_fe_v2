@@ -2,8 +2,8 @@
 
 import './style.scss'
 import { motion } from 'framer-motion'
-import { useState } from 'react'
-import { variants_3, variants_2, variants } from './anim'
+import { useState, useEffect } from 'react'
+import { variants_4, variants_3, variants_2, variants } from './anim'
 
 
 export default function SustainabilityItem({ isInView }) {
@@ -24,16 +24,13 @@ export default function SustainabilityItem({ isInView }) {
 
   return (<>
 
-
-
     {/* kalinga */}
     <div className={`wrap-item kalinga ${isActive.Kalinga ? 'zIndex5' : ''} `}  >
       {/* ORANGE */}
 
       <motion.svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
-          variants={variants}
-          initial="initial"
+          variants={variants_4}
           animate={isInView ? "open" : "closed"}
 
           d="M100 200C155.228 200 200 155.228 200 100C200 44.7717 155.228 0 100 0C44.7717 0 0 44.7717 0 100C0 155.228 44.7717 200 100 200Z" fill="#F58232" />
@@ -140,6 +137,8 @@ export default function SustainabilityItem({ isInView }) {
       <motion.svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
 
         <motion.path
+          variants={variants_4}
+          animate={isInView ? "open" : "closed"}
           d="M100 200C155.228 200 200 155.228 200 100C200 44.7717 155.228 0 100 0C44.7717 0 0 44.7717 0 100C0 155.228 44.7717 200 100 200Z" fill="#55B047" />
 
         <motion.path
@@ -248,8 +247,10 @@ export default function SustainabilityItem({ isInView }) {
       {/* BLUE */}
       <motion.svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
-
+          variants={variants_4}
+          animate={isInView ? "open" : "closed"}
           d="M100 200C155.228 200 200 155.228 200 100C200 44.7717 155.228 0 100 0C44.7718 0 0 44.7717 0 100C0 155.228 44.7718 200 100 200Z" fill="#00A4D6" />
+
         <motion.path
           variants={variants}
           initial="initial"

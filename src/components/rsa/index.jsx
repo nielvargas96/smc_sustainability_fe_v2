@@ -17,9 +17,9 @@ export default function Rsa() {
     target: refContainer,
     offset: ['start end', 'end start']
   })
-  const x = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
-  const matches = useMediaQuery('(min-width: 768px)');
+
+  const x = useTransform(scrollYProgress, [0, 1], [0, 100]);
 
 
   return (
@@ -53,7 +53,11 @@ export default function Rsa() {
             </div>
           </div>
 
-          <motion.div className='action-button' style={{ x }}>
+          <motion.div
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+
+            className='action-button' style={{ x }}>
             <Magnetic>
               <Link className='btn-rounded' href="/our-approach/sustainability-governance-structure" title='Read More'>
                 <span>Read more</span>

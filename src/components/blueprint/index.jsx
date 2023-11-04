@@ -62,7 +62,7 @@ export default function Blueprint() {
 
                     <div className='info'>
                       <span className='label'><b className='green'>Kalikasan</b> <i>Good for Planet</i></span>
-                      <div className='p-text'>
+                      <div className='text'>
                         <p>1. Establish a circular economy approach by 2040</p>
                         <p>2. Net Zero by 2050</p>
                       </div>

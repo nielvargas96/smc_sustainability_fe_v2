@@ -1,13 +1,15 @@
 export const variants = {
   initial: {
-    pathLength: 0
+    pathLength: 0,
+    display: 'none'
   },
   open: {
+    display: 'block',
     opacity: 1,
     pathLength: 1,
     transition: {
-      delay: .25,
-      duration: 2.5,
+      delay: 1,
+      duration: 1.5,
       ease: "easeInOut",
     },
     repeat: Infinity,
@@ -19,6 +21,17 @@ export const variants = {
       duration: 0,
       ease: "easeInOut",
     }
+  },
+  test: {
+    opacity: 0,
+    pathLength: 0,
+    transition: {
+      delay: 1,
+      duration: 1.5,
+      ease: "easeInOut",
+    },
+    repeat: Infinity,
+    repeatType: "loop",
   }
 }
 
@@ -46,8 +59,8 @@ export const variants_3 = {
     display: 'block',
     pathLength: 1,
     transition: {
-      delay: 1.5,
-      duration: 2.5,
+      delay: 1,
+      duration: 1.25,
       ease: "easeInOut",
     },
     repeat: Infinity,
@@ -59,5 +72,21 @@ export const variants_3 = {
       duration: 0,
       ease: "easeInOut",
     }
+  }
+}
+
+export const variants_4 = {
+  initial: {
+    scale: 0
+  },
+  open: {
+    scale: 1,
+    transition: {
+      duration: 1,
+      ease: "easeInOut",
+    },
+  },
+  closed: {
+    scale: 0
   }
 }

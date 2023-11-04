@@ -89,7 +89,7 @@ export default function SustainabilityGlance({ value }) {
                           {detail.icon}
                         </div>
                         <div className="desc">
-                          <span className="heading-3">{detail.amount} <AnimatedCounter > 1000</AnimatedCounter> </span>
+                          <span className="heading-3">{detail.amount} </span>
                           <p>{detail.desc}</p>
                         </div>
                       </div>
