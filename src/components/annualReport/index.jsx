@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 export default function AnnualReport() {
 
-  const refContainer = useRef();
+  const refContainer = useRef(null);
   const { scrollYProgress } = useScroll({
     target: refContainer,
     offset: ['start end', 'end start']
@@ -54,6 +54,7 @@ export default function AnnualReport() {
         <motion.div className='action-button'
           initial={{ scale: 0, delay: 5 }}
           whileInView={{ scale: 1 }}
+          transition={{ ease: "linear", duration: .25 }}
           style={{ x }}>
           <Magnetic>
             <Link className='btn-rounded' href="/our-approach/sustainability-governance-structure" title='Read More'>

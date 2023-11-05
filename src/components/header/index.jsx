@@ -13,7 +13,7 @@ import { variantsNavHide } from './anim';
 
 export default function Index() {
   const [isActive, setIsActive] = useState(false);
-  const sideNavRef = useRef();
+  const sideNavRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event) => {

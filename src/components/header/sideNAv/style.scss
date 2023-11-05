@@ -44,9 +44,10 @@
         color: #fff;
         border-bottom: 1px solid #fff;
         text-transform: uppercase;
-        font-size: 12px;
-        margin-bottom: 35px;
-        padding-bottom: 1rem;
+        font-weight: 500;
+        font-size: 10px;
+        margin-bottom: 2.25rem;
+        padding-bottom: 10px;
         font-family: 'Montserrat', sans-serif;
     }
 }
@@ -58,9 +59,10 @@
         color: #fff;
         border-bottom: 1px solid #fff;
         text-transform: uppercase;
-        font-size: 12px;
-        padding-bottom: 1rem;
+        font-weight: 500;
+        font-size: 10px;
         margin-bottom: 1rem;
+        padding-bottom: 10px;
         font-family: 'Montserrat', sans-serif;
     }
 }
@@ -144,7 +146,7 @@
 
 @media screen and (min-width:1024px) {
     .side-nav-menu {
-        max-width: 460px;
+        max-width: 500px;
     }
 
     .side-nav-body {

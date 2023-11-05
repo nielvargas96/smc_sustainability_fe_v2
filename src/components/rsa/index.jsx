@@ -12,7 +12,7 @@ import './style.scss'
 
 export default function Rsa() {
 
-  const refContainer = useRef();
+  const refContainer = useRef(null);
   const { scrollYProgress } = useScroll({
     target: refContainer,
     offset: ['start end', 'end start']
@@ -57,6 +57,7 @@ export default function Rsa() {
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
 
+            transition={{ ease: "linear", duration: .25 }}
             className='action-button' style={{ x }}>
             <Magnetic>
               <Link className='btn-rounded' href="/our-approach/sustainability-governance-structure" title='Read More'>

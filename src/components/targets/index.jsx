@@ -4,12 +4,33 @@ import './style.scss'
 import Image from 'next/image'
 import { variants_4, variants } from './anim'
 import { motion, useInView, useScroll, useTransform } from "framer-motion"
-import { useRef } from 'react'
+import { useRef, useState, useEffect } from 'react'
+import Modal from '../modal/modal'
+import Link from 'next/link'
+import { modalSustainabilityTargets } from '@/api/api';
+import { useModal } from '../modal/modalContext'
 
 export default function Targets() {
-
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+
+  // THIS CODE IS FOR MODAL HOOK
+  const { openModal } = useModal();
+  const handleOpenModal = (id) => {
+    let data = modalSustainabilityTargets.find((data) => data.id === id);
+    // setSelectedData(data);
+    // setIsOpen(true)
+
+    openModal(data);
+  };
+
+  // const openModal = (id) => {
+  //   const data = modalSustainabilityTargets.find((data) => data.id === id);
+  //   setSelectedData(data);
+  //   setIsOpen(true)
+  // };
+
+
 
   return (<>
     <section className='section-5' >
@@ -69,15 +90,24 @@ export default function Targets() {
             </div>
 
             <div className='action'>
+              {/* {modalSustainabilityTargets.map((data) => ( */}
               <motion.div
+
                 initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                className='btn-toggle-modal'>
+                whileInView={{ scale: 1, }}
+                transition={{ ease: "linear", duration: .25 }}
+                className='btn-toggle-modal'
+                // onClick={() => openModal(1)}
+                onClick={() => handleOpenModal(1)}
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
                   <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" fill="#2E2E2F" />
                 </svg>
               </motion.div>
+              {/* ))} */}
             </div>
+
+            {/* <Modal isOpen={isOpen} setIsOpen={setIsOpen} data={selectedData} /> */}
 
           </div>
 
@@ -104,6 +134,7 @@ export default function Targets() {
             <div className="body">
               <h3 className='green'>Net Zero by 2050</h3>
               <p>Contributing to the following SDGs</p>
+
             </div>
 
             <div className='img-container'>
@@ -114,6 +145,7 @@ export default function Targets() {
               <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
+                onClick={() => handleOpenModal(2)}
                 className='btn-toggle-modal'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
                   <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" fill="#2E2E2F" />
@@ -194,6 +226,7 @@ export default function Targets() {
 
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
+                onClick={() => handleOpenModal(3)}
                 className='btn-toggle-modal'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
                   <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" fill="#2E2E2F" />
@@ -256,6 +289,7 @@ export default function Targets() {
               <motion.div
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
+                onClick={() => handleOpenModal(4)}
                 className='btn-toggle-modal'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 448 512">
                   <path d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z" fill="#2E2E2F" />
@@ -268,6 +302,6 @@ export default function Targets() {
 
         </div>
       </div>
-    </section>
+    </section >
   </>)
 }

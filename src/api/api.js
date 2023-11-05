@@ -123,7 +123,46 @@ export const navItems = [
 export const modalSustainabilityTargets = [
   {
     id: 1,
-    // title: title,
-    // description: description
+    title: 'Establish a circular economy approach by 2040',
+    body: [
+      {
+        id: 1,
+        img: "image link",
+        text: "TEXT1 "
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: 'Net Zero by 2050',
+    body: [
+      {
+        id: 1,
+        img: "image link",
+        text: "TEXT2 "
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: 'At least 15 million uplifted people by 2030 ',
+    body: [
+      {
+        id: 1,
+        img: "image link",
+        text: "TEXT "
+      }
+    ]
+  },
+  {
+    id: 4,
+    title: 'A fully sustainable and ethical supply chain by 2040',
+    body: [
+      {
+        id: 1,
+        img: "image link",
+        text: "TEXT "
+      }
+    ]
   }
 ]

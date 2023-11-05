@@ -24,7 +24,7 @@ export default function Index() {
   // const rotate = useTransform(scrollYProgress, [0, 1], [120, 90])
 
   return (
-    <footer className="footer-container">
+    <footer className="footer-container" id="footer-container">
       <div className="footer-body">
         <div className="footer-content">
           <div className="socials">

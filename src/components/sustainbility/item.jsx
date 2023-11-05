@@ -34,10 +34,14 @@ export default function SustainabilityItem({ isInView }) {
           animate={isInView ? "open" : "closed"}
 
           d="M100 200C155.228 200 200 155.228 200 100C200 44.7717 155.228 0 100 0C44.7717 0 0 44.7717 0 100C0 155.228 44.7717 200 100 200Z" fill="#F58232" />
+
         <motion.path
           variants={variants}
-          initial="initial"
+          initial={isActive.Kalinga ? "initial" : "initial"}
           animate={isInView ? "open" : "closed"}
+          exit="exit"
+
+          // transition={{ ease: "linear", duration: .25 }}
 
           d="M89.3286 155.866L88.695 138.128C88.695 138.128 92.4962 134.327 93.1297 129.259C93.7632 124.19 89.9621 120.389 88.0615 119.122C86.161 117.855 77.9252 114.688 73.4905 110.253C69.0558 105.818 69.6894 102.228 66.5218 100.116C63.3541 98.0048 60.1865 100.75 60.1865 102.651"
           stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
@@ -45,6 +49,7 @@ export default function SustainabilityItem({ isInView }) {
           variants={variants}
           initial="initial"
           animate={isInView ? "open" : "closed"}
+
 
           d="M68.4222 114.688C68.4222 114.688 61.01 111.52 60.1864 103.284C59.9963 101.384 59.5529 96.9489 61.4534 90.6137C63.354 84.2784 69.0557 78.5767 65.2546 76.6762C61.4534 74.7756 56.3853 83.6449 56.3853 83.6449C56.3853 83.6449 47.5159 100.117 50.6836 113.42C53.8512 126.724 68.4222 136.227 68.4222 136.227V146.997" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
         <motion.path

@@ -10,7 +10,7 @@ export const variants = {
     transition: {
       delay: 1,
       duration: 1.5,
-      ease: "easeInOut",
+      ease: "linear",
     },
     repeat: Infinity,
     repeatType: "loop",
@@ -22,7 +22,7 @@ export const variants = {
       ease: "easeInOut",
     }
   },
-  test: {
+  exit: {
     opacity: 0,
     pathLength: 0,
     transition: {
@@ -30,8 +30,6 @@ export const variants = {
       duration: 1.5,
       ease: "easeInOut",
     },
-    repeat: Infinity,
-    repeatType: "loop",
   }
 }
 

@@ -5,6 +5,7 @@ import { motion, useInView, useScroll, useTransform } from "framer-motion"
 import './style.scss'
 import SustainabilityItem from './item'
 import Image from 'next/image'
+import Description from '@/components/common/Description'
 
 
 export default function Sustainability() {
@@ -31,6 +32,10 @@ export default function Sustainability() {
       }
     },
     exit: { opacity: 0, y: 50 },
+  }
+
+  const slideUp = {
+
   }
 
   return (
@@ -68,7 +73,7 @@ export default function Sustainability() {
       </div>
 
 
-    </section>
+    </section >
   )
 }
 
