@@ -1,10 +1,24 @@
+"use client"
+
 import './style.scss'
 import Image from 'next/image'
 import Magnetic from '@/components/common/Magnetic'
 import Link from 'next/link'
 import Description from '@/components/common/Description'
+import { motion, useInView } from 'framer-motion'
+import { blueprint } from '@/api/api'
+import { useState } from 'react'
 
 export default function Blueprint() {
+  // const ref = useRef(null);
+  // const isInView = useInView(ref, { once: true });
+
+  const [activeImageId, setActiveImageId] = useState("blueprint_1");
+
+  const handleClick = (imageId) => {
+    setActiveImageId(imageId);
+  };
+
   return (
     <section className='section-3'>
       <div className='block-content '>
@@ -15,6 +29,15 @@ export default function Blueprint() {
 
           <div className='two-col'>
             <div className='description-container'>
+
+              <div className='container'>
+                <div className={`item  ${activeImageId === "blueprint_1" ? 'active' : ''}`}>1</div>
+                <div className={`item  ${activeImageId === "blueprint_2" ? 'active' : ''}`}>2</div>
+                <div className={`item  ${activeImageId === "blueprint_3" ? 'active' : ''}`}>3</div>
+                <div className={`item  ${activeImageId === "blueprint_4" ? 'active' : ''}`}>4</div>
+                <div className={`item  ${activeImageId === "blueprint_5" ? 'active' : ''}`}>4</div>
+                <div className={`item  ${activeImageId === "blueprint_6" ? 'active' : ''}`}>5</div>
+              </div>
               <div className='description'>
                 <h3 className='sub-title'> Sustainable Agenda </h3>
                 <div className='p-text'>
@@ -118,9 +141,16 @@ export default function Blueprint() {
               </div>
             </div>
 
+
             <div className='img-container'>
-              <Image priority src='/images/smc_blueprint.png' alt="A Blueprint for San Miguel" width={540} height={610} />
+              <Image onClick={() => handleClick("blueprint_1")} className={`image ${activeImageId === "blueprint_1" ? 'active' : ''}`} src='blueprint_1.png' alt="A Blueprint for San Miguel 1" width={219} height={97} />
+              <Image onClick={() => handleClick("blueprint_2")} className={`image ${activeImageId === "blueprint_2" ? 'active' : ''}`} src='blueprint_2.png' alt="A Blueprint for San Miguel 2" width={307} height={93} />
+              <Image onClick={() => handleClick("blueprint_3")} className={`image ${activeImageId === "blueprint_3" ? 'active' : ''}`} src='blueprint_3.png' alt="A Blueprint for San Miguel 3" width={384} height={95} />
+              <Image onClick={() => handleClick("blueprint_4")} className={`image ${activeImageId === "blueprint_4" ? 'active' : ''}`} src='blueprint_4.png' alt="A Blueprint for San Miguel 4" width={469} height={95} />
+              <Image onClick={() => handleClick("blueprint_5")} className={`image ${activeImageId === "blueprint_5" ? 'active' : ''}`} src='blueprint_5.png' alt="A Blueprint for San Miguel 5" width={509} height={93} />
+              <Image onClick={() => handleClick("blueprint_6")} className={`image ${activeImageId === "blueprint_6" ? 'active' : ''}`} src='blueprint_6.png' alt="A Blueprint for San Miguel 6" width={561} height={121} />
             </div>
+
           </div>
         </div>
       </div>

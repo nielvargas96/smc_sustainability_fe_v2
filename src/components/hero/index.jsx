@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <section className='section-1'>
       <Image
-        src='/images/world_of_good.jpg'
+        src='world_of_good.jpg'
         quality={100}
         priority
         fill={true}

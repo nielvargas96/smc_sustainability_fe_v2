@@ -62,7 +62,7 @@ export default function SustainabilityGlance({ value }) {
     <>
       <section className="section-6">
         <div className="background-container">
-          <Image src="/images/sustainability_glance_bg.png" fill={true} sizes="100" alt="Background" />
+          <Image src="sustainability_glance_bg.png" fill={true} sizes="100" alt="Background" />
         </div>
         <div className="block-content">
           <div className="header-title">

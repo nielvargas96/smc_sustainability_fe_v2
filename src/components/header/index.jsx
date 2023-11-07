@@ -43,6 +43,8 @@ export default function Index() {
       document.removeEventListener('click', handleClickInside);
       document.body.classList.remove('active');
     };
+
+
   }, [isActive]);
 
   const { scrollY } = useScroll();
@@ -57,15 +59,14 @@ export default function Index() {
     }
   })
 
-
   return (
     <>
       {/* HEADER */}
       <header className='header'>
         <div className="logo">
           <Link href="/" title='San Miguel Corporation'>
-            <Image src='/images/smc_logo.svg' width={63} height={65} quality={100} priority alt='SMC Logo' />
-            <Image src='/images/smc_logo.svg' width={48} height={80} quality={75} priority alt='SMC Logo' />
+            <Image src='smc_logo.svg' width={63} height={65} quality={100} priority alt='SMC Logo' />
+            <Image src='smc_logo.svg' width={48} height={80} quality={75} priority alt='SMC Logo' />
           </Link>
         </div>
 
@@ -82,7 +83,8 @@ export default function Index() {
 
           <div className="nav-menu">
             {navItems.map((e, i) => (
-              <div key={i} className='menu-item'>
+              <div
+                key={i} className='menu-item'>
 
                 <Link className='item' href={e.href}>
                   {e.title === "News & Update" ? (

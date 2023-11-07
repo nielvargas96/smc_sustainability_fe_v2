@@ -86,7 +86,7 @@ export default function Targets() {
             </div>
 
             <div className='img-container'>
-              <Image src='/images/economy-cards.png' width={301} height={76} quality={100} alt='Establish a circular economy approach by 2040' />
+              <Image src='economy-cards.png' width={301} height={76} quality={100} alt='Establish a circular economy approach by 2040' />
             </div>
 
             <div className='action'>
@@ -138,7 +138,7 @@ export default function Targets() {
             </div>
 
             <div className='img-container'>
-              <Image src='/images/net_zero_cards.png' height={75} width={301} alt='Net Zero by 2050' />
+              <Image src='net_zero_cards.png' height={75} width={301} alt='Net Zero by 2050' />
             </div>
 
             <div className='action'>
@@ -218,7 +218,7 @@ export default function Targets() {
             </div>
 
             <div className='img-container'>
-              <Image src='/images/uplifted_cards.png' width={432} height={70} alt='At least 15 million uplifted people by 2030' />
+              <Image src='uplifted_cards.png' width={432} height={70} alt='At least 15 million uplifted people by 2030' />
             </div>
 
             <div className='action'>
@@ -282,7 +282,7 @@ export default function Targets() {
               <p>Contributing to the following SDGs</p>
             </div>
             <div className='img-container'>
-              <Image src='/images/supply_chain_cards.png' width={230} height={76} alt='A fully sustainable and ethical supply chain by 2040' />
+              <Image src='supply_chain_cards.png' width={230} height={76} alt='A fully sustainable and ethical supply chain by 2040' />
             </div>
 
             <div className='action'>

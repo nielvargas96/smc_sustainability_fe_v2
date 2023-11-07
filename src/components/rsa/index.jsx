@@ -18,16 +18,14 @@ export default function Rsa() {
     offset: ['start end', 'end start']
   })
 
-
   const x = useTransform(scrollYProgress, [0, 1], [0, 100]);
-
 
   return (
     <>
       <section className='section-2'>
         <section ref={refContainer} className='card'>
           <div className='bg-gradient'>
-            <Image fill={true} sizes={100} src="/images/bg_gradient.png" priority alt='Background Gradient' />
+            <Image fill={true} sizes={100} src="bg_gradient.png" priority alt='Background Gradient' />
           </div>
 
           <div className='card-wrapper'>
@@ -49,7 +47,7 @@ export default function Rsa() {
             </div>
 
             <div className='img-wrapper'>
-              <Image src="/images/ceo.png" priority width={557} height={594} alt='Ramon S. Ang | President and Chief Operating Officer' />
+              <Image src="ceo.png" priority width={557} height={594} alt='Ramon S. Ang | President and Chief Operating Officer' />
             </div>
           </div>
 
@@ -60,7 +58,7 @@ export default function Rsa() {
             transition={{ ease: "linear", duration: .25 }}
             className='action-button' style={{ x }}>
             <Magnetic>
-              <Link className='btn-rounded' href="/our-approach/sustainability-governance-structure" title='Read More'>
+              <Link className='btn-rounded' href="/presidents-message" title='Read More'>
                 <span>Read more</span>
               </Link>
             </Magnetic>

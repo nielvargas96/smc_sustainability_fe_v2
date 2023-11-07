@@ -6,7 +6,7 @@ export default function NotFound() {
       <div>
         <h1>Page Not Found!</h1> <br />
         <p>Could not find requested resource</p> <br />
-        <Link href="/">Return Home</Link>
+        <Link className='btn subsidiary' href="/">Return Home</Link>
       </div>
     </section>
   )

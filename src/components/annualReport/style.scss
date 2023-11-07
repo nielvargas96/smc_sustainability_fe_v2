@@ -35,10 +35,10 @@
 
   .card {
     display: flex;
+    flex-direction: column;
   }
 
   .description-container {
-    width: 50%;
     padding-right: 2.5rem;
 
     p {
@@ -48,7 +48,6 @@
 
   .img-container {
     position: relative;
-    width: 50%;
 
     img {
       &:first-child {
@@ -73,15 +72,31 @@
     }
   }
 
+  .action-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    margin-left: -5rem;
+    width: 100%;
+    z-index: 3;
+  }
 }
 
-.action-button {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
-  margin-left: -5rem;
-  width: 100%;
-  z-index: 3;
+
+
+@media screen and (min-width:1025px) {
+  .section-7 {
+
+    .description-container,
+    .img-container {
+      width: 50%;
+    }
+
+    .card {
+      flex-direction: row;
+    }
+  }
+
 }

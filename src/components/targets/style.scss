@@ -13,6 +13,8 @@
 .targets-container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   margin-top: 5rem;
   padding-bottom: 5rem;
   gap: 2rem;
@@ -21,10 +23,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    width: calc(96%/2);
     padding: 1.8rem 2.5rem;
     border-radius: 30px;
     background-color: #fff;
+    width: 100%;
 
     .head {
       display: flex;
@@ -79,6 +81,30 @@
 
 
 
+@media screen and (max-width:768px) {
+  .targets-container {
+    flex-direction: row;
+    align-items: stretch;
+
+
+    .img-container {
+      max-width: 80%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
 @media screen and (min-width:1025px) {
-  .targets-container {}
+  .targets-container {
+    flex-direction: row;
+    align-items: stretch;
+
+    .card-item {
+      width: calc(96%/2);
+    }
+  }
 }

@@ -93,33 +93,36 @@
         transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
+    .sub-menu {
+        position: absolute;
+        top: 100%;
+        z-index: -100;
+        display: none;
+    }
+
     &:hover {
         .sub-menu {
             display: block;
-            background: rgb(86, 161, 71);
-            width: 20vw;
+            padding: 1rem 1.5rem;
+            backdrop-filter: blur(10px);
+            background: rgba(0, 0, 0, 0.4);
+            width: 22vw;
             border-radius: 8px;
 
             span {
                 display: block;
                 color: #fff;
-                font-size: 14px;
+                font-size: 15px;
             }
-
-
         }
+
 
         svg {
             transform: rotate(-180deg);
         }
     }
 
-    .sub-menu {
-        position: absolute;
-        top: 100%;
-        padding: 1rem 1.5rem;
-        display: none;
-    }
+
 
     .item {
         display: flex;

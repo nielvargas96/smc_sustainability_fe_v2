@@ -33,7 +33,7 @@ export default function Index() {
 
           <div className="footer-logo">
             <Link href="#" title="SMC">
-              <Image src="/images/smc_logo_footer.png" width={320} height={91} alt="SMC LOGO" />
+              <Image src="smc_logo_footer.png" width={320} height={91} alt="SMC LOGO" />
             </Link>
           </div>
           <div className="subsidiary-website">

@@ -9,6 +9,9 @@ export const slideUp = {
   closed: {
     y: "100%",
     transition: { duration: 0.5 }
+  },
+  exit: {
+    y: "100%"
   }
 }
 

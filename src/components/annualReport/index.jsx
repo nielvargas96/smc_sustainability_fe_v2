@@ -38,8 +38,8 @@ export default function AnnualReport() {
           </div>
 
           <div className="img-container" >
-            <Image style={{ x }} priority src="/images/annual_report.png" width={478} height={679} alt="Annual Report" />
-            <Image style={{ x }} priority src="/images/annual_report_2.png" width={556} height={520} alt="Annual Report" />
+            <Image priority src="annual_report.png" width={478} height={679} alt="Annual Report" />
+            <Image priority src="annual_report_2.png" width={556} height={520} alt="Annual Report" />
             <motion.svg
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}

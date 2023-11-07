@@ -44,8 +44,8 @@ export const navItems = [
         href: "/kalikasan/climate-change-action"
       },
       {
-        title: "Resource Manangement",
-        href: "/kalikasan/resource-manangement"
+        title: "Resource Management",
+        href: "/kalikasan/resource-management"
       },
       {
         title: "Circular Economy",
@@ -164,5 +164,39 @@ export const modalSustainabilityTargets = [
         text: "TEXT "
       }
     ]
+  }
+]
+
+
+export const blueprint = [
+  {
+    id: 1,
+    title: 'San Miguel',
+    image: 'blueprint_1.png'
+  },
+  {
+    id: 2,
+    title: 'Vision',
+    image: 'blueprint_2.png'
+  },
+  {
+    id: 3,
+    title: 'Purpose',
+    image: 'blueprint_3.png'
+  },
+  {
+    id: 4,
+    title: 'Corporate Values',
+    image: 'blueprint_4.png'
+  }
+  , {
+    id: 5,
+    title: 'Sustainable Agenda',
+    image: 'blueprint_5.png'
+  }
+  , {
+    id: 6,
+    title: 'Our Business',
+    image: 'blueprint_6.png'
   }
 ]
