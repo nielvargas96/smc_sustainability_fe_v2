@@ -127,6 +127,10 @@
     padding-bottom: 6px;
     font-weight: 500;
     color: #fff;
+
+    &:hover {
+        background-size: 0;
+    }
 }
 
 .arrowActive {

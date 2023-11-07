@@ -1,6 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
 
+export const metadata = {
+  title: 'Partnerships',
+  description: 'Partnerships | SMC Sustainability',
+}
+
 export default function Index() {
   return (
     <section className='article-container'>

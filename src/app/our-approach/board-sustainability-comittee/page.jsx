@@ -1,5 +1,11 @@
 import React from 'react'
 import './style.scss'
+
+export const metadata = {
+  title: 'Board Sustainability Committee',
+  description: 'Board Sustainability Committee | SMC Sustainability',
+}
+
 export default function Index() {
   return (
     <section className='article-container'>

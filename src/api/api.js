@@ -53,7 +53,7 @@ export const navItems = [
       },
       {
         title: "Biodiversity & Ecosystems",
-        href: "/kalikasan/biodiversity-ecosystems"
+        href: "/kalikasan/biodiversity-and-ecosystems"
       },
     ]
   },
